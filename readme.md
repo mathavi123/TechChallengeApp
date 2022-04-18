@@ -4,8 +4,10 @@ TABLE OF CONTENTS:
 
 [Tech Challenge Overview](#1-tech-challenge-overview)
 
-[Architecture](#Architecture:)
-[Create IAM Role for EC2 and CodeDeploy][#Create-IAM-Role-for-EC2-and-CodeDeploy:]
+[Architecture](#architecture)
+
+[Create IAM Role for EC2 and CodeDeploy](#create-iam-role-for-ec2-and-codedeploy)
+
 [Create SecurityGroup]
 [Create EC2 Instance]
 [Connect EC2 Instance]
