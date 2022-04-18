@@ -14,7 +14,7 @@ go get github.com/GeertJohan/go.rice/rice
 sudo ./build.sh
 sudo -u postgres psql -U postgres -d postgres -c "alter user postgres with password 'changeme';"
 sudo cd /home/ubuntu/TechChallengeApp/dist
-./TechChallengeApp updatedb
+/home/ubuntu/TechChallengeApp/dist/TechChallengeApp updatedb
 
 sed -i 's/"ListenHost" = "localhost"/"ListenHost" = "0.0.0.0"/g'  /home/ubuntu/TechChallengeApp/dist/conf.toml
 /home/ubuntu/TechChallengeApp/dist/TechChallengeApp serve >output.log 2>&1 & 
