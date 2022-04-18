@@ -17,4 +17,4 @@ sudo cd /home/ubuntu/TechChallengeApp/dist
 ./TechChallengeApp updatedb
 
 sed -i 's/"ListenHost" = "localhost"/"ListenHost" = "0.0.0.0"/g'  /home/ubuntu/TechChallengeApp/dist/conf.toml
-./TechChallengeApp serve 
+./TechChallengeApp serve >output.log 2>&1 & 
