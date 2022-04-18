@@ -170,6 +170,17 @@ On Local deskop, we need to have git client.
 After run the command, git init 
 
 Then creating files appspec.yml, setup.sh, appstart.sh
+Then, git add appspec.yml
+
+git add setup.sh
+
+git add appspec.yml
+
+git add startapp.sh
+
+git commit -m "corrected startapp.sh"
+
+git push https://github.com/mathavi123/TechChallengeApp.git
 
 ![image](https://user-images.githubusercontent.com/39115469/163871990-8da6b472-f550-4313-ac04-36614ea7cc65.png) ![image](https://user-images.githubusercontent.com/39115469/163872006-48b01765-49ec-4e5a-83a4-c79eea36981a.png)
 
