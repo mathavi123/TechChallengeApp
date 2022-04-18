@@ -9,6 +9,6 @@ hooks:
      timeout: 300
      runas: root
   ApplicationStart:
-    - location: /home/ubuntu/TechChallengeApp/dist/TechChallengeApp serve
+    - location: startapp.sh 
       timeout: 300
-      runas: ubuntu
+      runas: root
