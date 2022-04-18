@@ -88,7 +88,9 @@ In Configure Security Group, add the SecurityGroup which we created above **Serv
 
 ## Connect EC2 Instance:
 Once Instance is up and running, Right-click on instance id and click on connect. On the next page, Take a note of the **Public IP Address** and connect using the default **User name**.
-![image](https://user-images.githubusercontent.com/39115469/163871885-d1683406-e373-4840-b68a-fe874fc2bd71.png)
+
+![image](https://user-images.githubusercontent.com/39115469/163882254-607e0635-01cb-4794-87bd-1515b5a64cd8.png)
+
 
 ## Install CodeDeploy Agent on EC2 Instance:
 To deploy the git repo by using CodeDeploy Service, **CodeDeploy-agent** must install in the EC2 instance.
