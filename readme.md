@@ -219,7 +219,7 @@ Recreate the deployment and fix this first. Once it's successful, you can access
 •	Still I need some more time to implement CI/CD pipeline through GitHub actions and to write yml code to auto provision the AWS services when there is a commit in repository. 
 •	I learned a lot of concepts from this project and am confident that I will implement it fully in few days with this CI/CD implementation.
  ## Future Recommendations:
-•	Once I complete full implemented, I can give some recommendations.
+•	Once I complete full implementation, I would like to give some recommendations.
 
 
 
