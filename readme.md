@@ -1,33 +1,37 @@
-# Servian DevOps Tech Challenge - Tech Challenge App
+# Servian Tech Challenge
 
-[![Build Status][circleci-badge]][circleci]
-[![Release][release-badge]][release]
-[![GoReportCard][report-badge]][report]
-[![License][license-badge]][license]
+TABLE OF CONTENTS:
 
-[circleci-badge]: https://circleci.com/gh/servian/TechChallengeApp.svg?style=shield&circle-token=8dfd03c6c2a5dc5555e2f1a84c36e33bc58ad0aa
-[circleci]: https://circleci.com/gh/servian/TechChallengeApp
-[release-badge]: http://img.shields.io/github/release/servian/TechChallengeApp/all.svg?style=flat
-[release]:https://github.com/Servian/TechChallengeApp/releases
-[report-badge]: https://goreportcard.com/badge/github.com/Servian/TechChallengeApp
-[report]: https://goreportcard.com/report/github.com/Servian/TechChallengeApp
-[license-badge]: https://img.shields.io/github/license/Servian/TechChallengeApp.svg?style=flat
-[license]: https://github.com/Servian/TechChallengeApp/license
+[Tech Challenge Overview](#1-tech-challenge-overview)
 
-## Overview
+[Architecture](#Architecture:)
+[Create IAM Role for EC2 and CodeDeploy][#Create-IAM-Role-for-EC2-and-CodeDeploy:]
+[Create SecurityGroup]
+[Create EC2 Instance]
+[Connect EC2 Instance]
+[Install CodeDeploy Agent on EC2 Instance]
+[GitHub Project]
+[CodeDeploy Service Configuration (appspec.yml, setup.sh and startapp.sh)]
+[GitHub Action]
 
-This is the Servian DevOps Tech challenge. It uses a simple application to help measure a candidate's technical capability and fit with Servian. The application itself is a simple GTD Golang application that is backed by a Postgres database.
 
-Servian provides the Tech Challenge to potential candidates, which focuses on deploying this application into a cloud environment of choice.
 
-More details about the application can be found in the [document folder](doc/readme.md)
 
-## Taking the challenge
 
-For more information about taking the challenge and joining Servians's amazing team, please head over to our [recruitment page](https://www.servian.com/careers/) and apply there. Our recruitment team will reach out to you about the details of the test and be able to answer any questions you have about Servian or the test itself.
+## Tech Challenge Overview:
+This project was made as a requirement during the Servian's interview process. As part of my current work, I had only chance to work in provisioning the resources to application team and troubleshoot if any other issues. The project is fully based on DevOps Engineer role and I had idea about the CI/CD, but not implemented in production environment. However, I managed to deploy the application manually EC2 instance with AWS CodeDeploy, still am working in the code to add the actions in GitHub Actions to do CI/CD part.
 
-Information about the assessment is available in the [assessment.md file](ASSESSMENT.md)
+## Architecture:
 
-## Found an issue?
+![image](https://user-images.githubusercontent.com/39115469/163870082-1ae4958f-854e-4f2c-9c9a-29bfdc06a751.png)
 
-If you've found an issue with the application, the documentation, or anything else, we are happy to take contributions. Please raise an issue in the [github repository](https://github.com/Servian/TechChallengeApp/issues) and read through the contribution rules found the [CONTRIBUTING.md](CONTRIBUTING.md) file for the details.
+## Prerequisites:
+1.	Create a GitHub account.
+2.	Create AWS Account.
+We need to select a particular region of AWS Services which CodeDeploy Agent and GitHub will use.
+**How to Deploy:**
+## Create IAM Role for EC2 and CodeDeploy:
+1. Create a role for EC2 Instance:
+1.	Select AWS Service as trusted entity and EC2 as usecase, click on Next:Permissions.
+2.	On the Permissions page, select AmazonEC2RoleforAWSCodeDeploy Policy and Click on Next:Tags
+
