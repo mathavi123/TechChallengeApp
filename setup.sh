@@ -17,3 +17,4 @@ sudo cd /home/ubuntu/TechChallengeApp/dist
 /home/ubuntu/TechChallengeApp/dist/TechChallengeApp updatedb
 
 sed -i 's/"ListenHost" = "localhost"/"ListenHost" = "0.0.0.0"/g'  /home/ubuntu/TechChallengeApp/dist/conf.toml
+chmod 755 /home/ubuntu/TechChallengeApp/startapp.sh
