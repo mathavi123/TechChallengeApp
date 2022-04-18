@@ -212,7 +212,13 @@ Once connected to GitHub, Provide the [mathavi123/TechChallengeApp](https://gith
 
 Wait for a few minutes ⏳ .
 If Deployment status is unsuccessful, verify the deployment logs from ec2 instance /var/log/aws/codedeploy-agent/codedeploy-agent.log.
+
 Recreate the deployment and fix this first. Once it's successful, you can access the application from a web browser or postman.
+
+Once deployed, we can access the ServianTechChallenge App URL.
+
+![image](https://user-images.githubusercontent.com/39115469/163881911-61cb4786-5e09-42d3-ab34-a49f997bb9fa.png)
+
 
 ## Challenges:
 •	It is quite challenging to deploy the entire stack on AWS. It was the first time I did this from scratch. Currently, I mostly support infrastructure as service  like provisioning, configuring AWS services  and will do troubleshooting if any issues on those services. I have some basic knowledge about CI/CD and have done a small project in CI/CD pipeline a long back for project purpose while doing PGP in Cloud Computing course.
