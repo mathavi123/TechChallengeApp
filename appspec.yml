@@ -8,3 +8,7 @@ hooks:
    - location: setup.sh
      timeout: 300
      runas: root
+  ApplicationStart:
+    - location: /home/ubuntu/TechChallengeApp/dist/TechChallengeApp serve
+      timeout: 300
+      runas: ubuntu
